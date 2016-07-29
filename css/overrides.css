@@ -1,0 +1,24 @@
+.left {
+  float: left;
+}
+.clear-left {
+  clear: left;
+}
+.right {
+  float: right;
+}
+.small {
+  font-size: .75em !important;
+}
+.img-clear {
+  border: none !important;
+  box-shadow: none !important;
+}
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.reveal .fa {
+  font-family: FontAwesome;
+}

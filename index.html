@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Drupal 8 Module Development | by Luke Bainbridge</title>
+
+    <meta name="description" content="Overview of the changes from Drupal 7 to Drupal 8 in terms of module development.">
+    <meta name="author" content="Luke Bainbridge">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Custom overrides -->
+    <link rel="stylesheet" href="css/overrides.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title slide -->
+        <section data-markdown="slides/01-title.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Introductions -->
+        <section data-markdown="slides/02-intro.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Overview -->
+        <section data-markdown="slides/03-overview.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- About Islandora -->
+        <section data-markdown="slides/04-about-islandora.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- YAML -->
+        <section data-markdown="slides/05-yaml.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Menu system -->
+        <section data-markdown="slides/06-menu.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- New PHP things -->
+        <section data-markdown="slides/07-new-php.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- New PHP things -->
+        <section data-markdown="slides/08-dependency-injection.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- New PHP things -->
+        <section data-markdown="slides/09-controllers.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Twig -->
+        <section data-markdown="slides/10-twig.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Outro -->
+        <section data-markdown="slides/11-outro.md"
+          data-separator="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
