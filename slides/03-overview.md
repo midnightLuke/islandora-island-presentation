@@ -1,11 +1,11 @@
 ## Overview
 
-- <!-- .element: class="fragment" --> What is Islandora?
-- <!-- .element: class="fragment" --> The History of Islandora
-- <!-- .element: class="fragment" --> What Can Islandora Do?
-- <!-- .element: class="fragment" --> The Islandora Community
-- <!-- .element: class="fragment" --> Drupal-izing Islandora
-- <!-- .element: class="fragment" --> The Future of Islandora
+#### What is Islandora?
+#### The History of Islandora
+#### What Can Islandora Do?
+#### Drupal-izing Islandora
+#### The Future of Islandora
+#### The Islandora Community
 
 Notes:
 

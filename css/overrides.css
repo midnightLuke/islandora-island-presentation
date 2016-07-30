@@ -13,6 +13,13 @@
 .img-clear {
   border: none !important;
   box-shadow: none !important;
+  background: none !important;
+}
+.img-white {
+  border: none !important;
+  box-shadow: none !important;
+  background: white !important;
+  padding: 1em;
 }
 .clearfix:after {
   content:"";

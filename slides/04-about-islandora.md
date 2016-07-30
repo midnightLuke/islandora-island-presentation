@@ -1,49 +1,94 @@
-
-## What is module development?
-
-Drupal is like an onion.  
-<!-- .element: class="fragment" --><img src="images/onion.png" alt="An onion" width="256" height="256" />  
-It's got layers!
-
-Notes:
-
-- "Layers" in drupal
-  - Theme
-  - Module
-  - Core
-- Often talk about working in the "theme" layer or "module"
-layer.
-  - Depends on what you want to do
-- Module "layer" is _extremely_ flexible, you can change almost
-anything.
-  - Migrations
-  - Features
-  - Configuration
-  - Custom entities
-  - Tweaks to core
+# What is Islandora?
 
 
-## <img src="images/hook.png" alt="Hook" width="96" height="96" style="border: none; box-shadow: none; position: relative; top: 35px" />Drupal 7 module development
+<!-- .slide: data-background="#fff" -->
+<img src="images/islandora.png" alt="Islandora logo" class="img-clear">
 
-- Built on the "hook" system <!-- .element: class="fragment" -->
-- Hooks allow you to change behaviour of Drupal <!-- .element: class="fragment" -->
-- Largely uses procedural programming <!-- .element: class="fragment" -->
-- Very similar to Drupal 6 <!-- .element: class="fragment" -->
+It's a suite of software for archiving digital assets! <!-- .element: style="color: black;"-->
+
+...it's a Drupal module!<!-- .element: class="fragment", style="color: black;" -->
 
 Notes:
 
-- "Rigid", meaning if something didn't provide a hook to alter it's behaviour
-you were reduced to recreating the whole module to replace it (or hacking it
-:P).
-- So many hooks could be confusing
-  - The field widget API is unwieldy
-  - Hooks for different things
+- "Suite" includes a lot of layers.
+- "Islandora" itself is simply a Drupal module.
 
 
-## <img src="images/plug.png" alt="Hook" width="72" height="72" style="border: none; box-shadow: none; position: relative; top: 25px" /> Drupal 8 module development
+## <span class="fa fa-cubes"></span> What's in the box?
 
-- New plugin system (but hooks are still a thing) <!-- .element: class="fragment" -->
-- Uses the Symfony components (which are awesome) <!-- .element: class="fragment" -->
-- Built on solid object-oriented techniques <!-- .element: class="fragment" -->
-- Uses YAML files instead of info files <!-- .element: class="fragment" -->
-- Extremely different than Drupal 7 <!-- .element: class="fragment" -->
+#### Spoiler: There is no box
+
+- <!-- .element: class="fragment" --> **Fedora Commons** (_Java content repository_)
+- <!-- .element: class="fragment" --> **Drupal Filter** (_Fedora authentication plugin_)
+- <!-- .element: class="fragment" --> **Apache SOLR** (_Search tool_)
+- <!-- .element: class="fragment" --> **Fedora GSearch** (_Java search indexer_)
+- <!-- .element: class="fragment" --> **Tuque** (_Fedora client php library_)
+- <!-- .element: class="fragment" --> **Islandora** (_Drupal module_)
+- <!-- .element: class="fragment" --> **Drupal**
+- <!-- .element: class="fragment" --> ...etc 😨
+
+Notes:
+
+- Not the Fedora OS
+  - Back end Java content repository
+- This is the basic stack required to run Islandora, does not include various 
+"Solution Packs", that have their own dependencies
+- Islandora leans heavily on java servlets
+- Set up is not trivial and debugging can be a pain
+- Djakota and Imagemagick are also required for certain things for example...
+- Typically all of this lives on a single server
+- Drupal has it's own requirements, ie Web server, database, etc...
+- Fedora also requires a database
+
+
+## <span class="fa fa-file"></span> Fedora Commons
+
+- <!-- .element: class="fragment" --> Fedora is a Java Content Repository and implements the [JCR standard](https://en.wikipedia.org/wiki/Content_repository_API_for_Java)
+- <!-- .element: class="fragment" --> Typically deployed into a Tomcat servlet container
+- <!-- .element: class="fragment" --> Islandora currently uses Fedora 3.x (which is EOL)
+- <!-- .element: class="fragment" --> Fedora stores **objects** in "FOXML" (Fedora-Object XML) files
+- <!-- .element: class="fragment" --> Objects can have any number of **datastreams**, which can contain anything
+- <!-- .element: class="fragment" --> A Fedora Repository can be rebuilt using only the filesystem
+
+Notes:
+
+- PHPCR implements the same standard with different backends (with various 
+levels of "feature-completedness" depending on the back-end)
+  - Used in the Symfony CMF
+- Datastreams typically contain metadata, derivatives (ie images in various 
+sizes) and other data about the object
+- Popular among archivists
+- Has no front-end
+  - Islandora is not the only front-end for Fedora, there is also "Hydra" (ruby)
+- Drupal analogue is "Entities" (Objects) and "Fields" (Datastreams)
+
+
+## <span class="fa fa-search"></span> Apache SOLR
+
+- <!-- .element: class="fragment" --> Search tool for Islandora
+- <!-- .element: class="fragment" --> Uses **Fedora GSearch** to index FOXML files directly
+- <!-- .element: class="fragment" --> FOXML is translated to SOLR documents using XSLT
+
+Notes:
+
+- Drupal is not involved in the indexing process...
+  - No runtime modifications
+
+
+## <span class="fa fa-desktop"></span> Islandora
+
+- <!-- .element: class="fragment" --> Uses **Tuque** to interface with Islandora
+- <!-- .element: class="fragment" --> Ingests and displays **objects**
+- <!-- .element: class="fragment" --> Uses various **Solution Packs** to define "_content models_"
+- <!-- .element: class="fragment" --> Uses **SOLR** index for search and discoverability
+- <!-- .element: class="fragment" --> Commonly refferred to as the "front-end" or "interface" for Fedora within Islandora community
+
+Notes:
+
+- Analogue for content models would be content-types
+  - Fedora is almost "schema-less" though, similar to SOLR
+- Strange to think of Drupal as a "front-end" for something when it is typically
+a back-end technology (ie headless Drupal)
+
+
+## TODO: Diagram
