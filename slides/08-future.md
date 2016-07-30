@@ -1,3 +1,4 @@
+<!-- .slide: data-background="http://i.giphy.com/IxKubPlRZclS8.gif" -->
 # The Future of Islandora
 
 
@@ -5,13 +6,17 @@
 
 - <!-- .element: class="fragment" --> Currently seeking new members and membership revenue
 - <!-- .element: class="fragment" --> Hired new technical lead for the Islandora project
-- <!-- .element: class="fragment" --> Islandora Con 2017 in Hamilton, ON, Canada
+- <!-- .element: class="fragment" --> [Islandora Con 2017](http://islandora.ca/camps/conference2017) in Hamilton, ON, Canada
 
 Notes:
 
 - The foundation stewards the project
 - In charge of holding camps and cons and encouraging contribution to the project
 
+
+<img src="https://avatars0.githubusercontent.com/u/15603186?v=3&s=200" alt="Drupal 8" class="img-clear" width="128" style="position: relative; top: 25px;">
+<span class="fa fa-heart" style="font-size: 1.75em; color: red"></span>
+<img src="images/drupal-8.png" alt="Drupal 8" class="img-clear" width="128" style="position: relative; top: 25px;">
 
 ## Islandora CLAW
 

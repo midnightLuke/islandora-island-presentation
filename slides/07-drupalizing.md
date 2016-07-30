@@ -1,3 +1,4 @@
+<!-- .slide: data-background="http://i.giphy.com/F6Q9RxU4Z2KLC.gif" -->
 # Drupal-izing Islandora
 
 Notes:
@@ -55,3 +56,16 @@ Notes:
 - Given infinite time on a project there are lots of improvements we could make
 - XACML a little rigid due to Drupal filter
   - Two scopes: User and role, Drupal modules provide more scopes (like group memberships), but not supported by Drupal filter
+
+
+## The "Fine Line"
+
+- <!-- .element: class="fragment" --> Performance is critical
+- <!-- .element: class="fragment" --> Some Islandora repositories can have millions of objects
+- <!-- .element: class="fragment" --> PHP is not always the best tool for the job (memory issues, site speed, etc)
+- <!-- .element: class="fragment" --> Drupal _can_ do a lot, but _should_ it?
+
+Notes:
+
+- This is a question that the Drupal community needs to think about more often as well
+- Hard to answer, but generally need to focus on "the right tool for the job"

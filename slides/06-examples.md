@@ -1,4 +1,5 @@
-# What Can Islandora Do?
+<!-- .slide: data-background="http://i.giphy.com/bip95zRzXg8q4.gif" -->
+# <!-- .element: style="text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;" --> What Can Islandora Do?
 
 
 # Not a lot!
@@ -11,7 +12,6 @@ packs to provide extra functionality
 
 ## Solution Packs
 
-- <!-- .element: class="fragment" --> Out of the box Islandora doesn't do alot
 - <!-- .element: class="fragment" --> Solution packs add "_cmodels_" and "_viewers_" for specific types of archival objects
 - <!-- .element: class="fragment" --> Solution Packs typically have extra dependencies for ingesting/viewing/derivative generation
 
@@ -33,9 +33,19 @@ Notes:
 
 ## Metadata
 
-- <!-- .element: class="fragment" --> Uses MODS records (librarians like these)
-- <!-- .element: class="fragment" --> DC datastreams are crosswalked automatically from MODS
+- <!-- .element: class="fragment" --> Islandora uses [MODS](https://en.wikipedia.org/wiki/Metadata_Object_Description_Schema) records extensively
+- <!-- .element: class="fragment" --> DC datastreams can be automatically crosswalked automatically from MODS
 - <!-- .element: class="fragment" --> Citations can be generated from MODS with Islandora Scholar Solution Pack
+
+Notes:
+
+- Metadata is a librarians dream
+- MODS stands for **M**etadata **O**bject **D**escription **S**chema
+
+
+## Versioning
+
+- <!-- .element: class="fragment" --> All datastreams keep version histories
 
 
 ## Image Archiving
@@ -56,7 +66,7 @@ Notes:
 
 ## Sites Using Islandora
 
-#### [York University](https://digital.library.yorku.ca/cat-gallery)
+#### [York University](https://digital.library.yorku.ca)
 
 #### [Metropolitan New York Library Council (METRO)](http://dcmny.org/)
 

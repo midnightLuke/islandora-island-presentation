@@ -1,3 +1,4 @@
+<!-- .slide: data-background="http://i.giphy.com/BYv467aAFGHHG.gif" -->
 # The History of Islandora
 #### [Source: islandora.ca](http://islandora.ca/timeline)
 
@@ -14,7 +15,6 @@
 
 - <!-- .element: class="fragment" --> **July 2013**: The Islandora Foundation is founded
 - <!-- .element: class="fragment" --> **2013/14**: Camps held in NYC, CA and UK (among other locations)
-- <!-- .element: class="fragment" --> **July 2013**: The Islandora Foundation is founded
 - <!-- .element: class="fragment" --> **January 2015**: Fedora 4.x/Islandora upgration project begins
 
 Notes:

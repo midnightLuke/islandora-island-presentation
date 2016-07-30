@@ -1,4 +1,5 @@
-# What is Islandora?
+<!-- .slide: data-background="http://i.giphy.com/TPl5N4Ci49ZQY.gif" -->
+# <!-- .element: style="color: black; text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;" --> What is Islandora?
 
 
 <!-- .slide: data-background="#fff" -->
@@ -77,11 +78,11 @@ Notes:
 
 ## <span class="fa fa-desktop"></span> Islandora
 
-- <!-- .element: class="fragment" --> Uses **Tuque** to interface with Islandora
+- <!-- .element: class="fragment" --> Uses **Tuque** to interface with Fedora
 - <!-- .element: class="fragment" --> Ingests and displays **objects**
 - <!-- .element: class="fragment" --> Uses various **Solution Packs** to define "_content models_"
-- <!-- .element: class="fragment" --> Uses **SOLR** index for search and discoverability
-- <!-- .element: class="fragment" --> Commonly refferred to as the "front-end" or "interface" for Fedora within Islandora community
+- <!-- .element: class="fragment" --> Uses **SOLR** index for search and discover-ability
+- <!-- .element: class="fragment" --> Commonly referred to as the "front-end" or "interface" for Fedora within Islandora community
 
 Notes:
 
@@ -91,4 +92,5 @@ Notes:
 a back-end technology (ie headless Drupal)
 
 
-## TODO: Diagram
+<!-- .slide: data-background="http://www.turingfinance.com/wp-content/uploads/2013/11/2Deployment.png" alt="complex system architecture" -->
+# <!-- .element: style="color: black; text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;" --> It's a little complicated
