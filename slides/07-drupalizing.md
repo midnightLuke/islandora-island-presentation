@@ -9,8 +9,8 @@ Notes:
 ## The Challenge
 
 - <!-- .element: class="fragment" --> Drupal was chosen as it was a popular open-source CMS platform
-- <!-- .element: class="fragment" --> Much of the original development was done by developers who were initially unfamiliar with Drupal
-- <!-- .element: class="fragment" --> Drupal contrib has starting solving some of the issues Islandora solved in custom additions
+- <!-- .element: class="fragment" --> Much of the original development was done by developers who may have been initially unfamiliar with Drupal
+- <!-- .element: class="fragment" --> Drupal contrib has started solving some of the issues Islandora solved in custom additions
 - <!-- .element: class="fragment" --> The current version of Islandora contains a lot of legacy code
 
 Notes:
@@ -49,13 +49,18 @@ Notes:
 - <!-- .element: class="fragment" --> Islandora SOLR vs the Search API with Sarnia
 - <!-- .element: class="fragment" --> Fedora GSearch vs custom Search API Provider with XSLT
 - <!-- .element: class="fragment" --> XACML permissions vs Drupal permissions
+- <!-- .element: class="fragment" --> Drupal install profile/distribution for Islandora
+- <!-- .element: class="fragment" --> Islandora modules on drupal.org (allow easier updates)
 
 Notes:
 
+- Yes, Drupal can handle XSLT transforms with a contrib module
 - Things that _could_ be done, but have not tried/tested
 - Given infinite time on a project there are lots of improvements we could make
 - XACML a little rigid due to Drupal filter
   - Two scopes: User and role, Drupal modules provide more scopes (like group memberships), but not supported by Drupal filter
+- Happy to say that much of this is on track for CLAW
+- Most drupal sites are managed with git, most islandora sites are managed with multiple git repos
 
 
 ## The "Fine Line"

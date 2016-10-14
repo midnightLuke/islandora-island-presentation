@@ -1,17 +1,13 @@
 <!-- .slide: data-background="http://i.giphy.com/IxKubPlRZclS8.gif" -->
-# The Future of Islandora
+# The Future of Islandora & Drupal
 
 
-## Expanding the Islandora Foundation
+## Drupal 8
 
-- <!-- .element: class="fragment" --> Currently seeking new members and membership revenue
-- <!-- .element: class="fragment" --> Hired new technical lead for the Islandora project
-- <!-- .element: class="fragment" --> [Islandora Con 2017](http://islandora.ca/camps/conference2017) in Hamilton, ON, Canada
-
-Notes:
-
-- The foundation stewards the project
-- In charge of holding camps and cons and encouraging contribution to the project
+- <!-- .element: class="fragment" --> Drupal 8 already has 3 major versions (8.2.0 released last Wednesday)
+- <!-- .element: class="fragment" --> Editor experience is a _big deal_ in the community right now
+- <!-- .element: class="fragment" --> Big push for more integration with larger PHP community (composer/packagist packages)
+- <!-- .element: class="fragment" --> [Drupal Con Baltimore](https://events.drupal.org/baltimore2017) in Baltimore, Maryland
 
 
 <img src="https://avatars0.githubusercontent.com/u/15603186?v=3&s=200" alt="Drupal 8" class="img-clear" width="128" style="position: relative; top: 25px;">

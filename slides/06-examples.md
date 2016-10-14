@@ -1,78 +1,50 @@
 <!-- .slide: data-background="http://i.giphy.com/bip95zRzXg8q4.gif" -->
-# <!-- .element: style="text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;" --> What Can Islandora Do?
+# <!-- .element: style="text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;" --> What Can Drupal Do?
 
 
-# Not a lot!
+## Modules
 
-Notes:
-
-- Almost nothing without some help, the basic stack provides APIs for solution
-packs to provide extra functionality
-
-
-## Solution Packs
-
-- <!-- .element: class="fragment" --> Solution packs add "_cmodels_" and "_viewers_" for specific types of archival objects
-- <!-- .element: class="fragment" --> Solution Packs typically have extra dependencies for ingesting/viewing/derivative generation
+- <!-- .element: class="fragment" --> Modules are the main building blocks of a site
+- <!-- .element: class="fragment" --> Islandora is simply a module, as are solution packs
 
 Notes:
 
 - Extra dependencies can be a pain to install/manage
 
 
-## Object Model
+## Theming
 
-- <!-- .element: class="fragment" --> Typically presented as a "tree" structure
-- <!-- .element: class="fragment" --> Really a graph structure (objects can have multiple parents)
-- <!-- .element: class="fragment" --> RELS-EXT datastream defines relationships
-
-Notes:
-
-- Think of a file system, where a directory can have files and sub-directories
-
-
-## Metadata
-
-- <!-- .element: class="fragment" --> Islandora uses [MODS](https://en.wikipedia.org/wiki/Metadata_Object_Description_Schema) records extensively
-- <!-- .element: class="fragment" --> DC datastreams can be automatically crosswalked automatically from MODS
-- <!-- .element: class="fragment" --> Citations can be generated from MODS with Islandora Scholar Solution Pack
+- <!-- .element: class="fragment" --> Robust theme layer
+- <!-- .element: class="fragment" --> Most things can be changing "last-minute" here
 
 Notes:
 
-- Metadata is a librarians dream
-- MODS stands for **M**etadata **O**bject **D**escription **S**chema
+- But they _shouldn't_ be.
 
 
-## Versioning
+## Caching
 
-- <!-- .element: class="fragment" --> All datastreams keep version histories
+- <!-- .element: class="fragment" --> Drupal not known to be the fastest out of the box, but many ways to make Drupal sites blazingly fast
+- <!-- .element: class="fragment" --> Swappable cache backends
+- <!-- .element: class="fragment" --> Easy to use cache API for developers
 
 
-## Image Archiving
+## Configuration
 
-- <!-- .element: class="fragment" --> Large Image Solution Pack for JP2000, tiffs, etc
-- <!-- .element: class="fragment" --> Basic Image Solution Pack for png, jpg, gifs, etc
+- <!-- .element: class="fragment" --> You can manipulate almost _any_ setting in the admin UI
+- <!-- .element: class="fragment" --> Sites can be built without any coding
+- <!-- .element: class="fragment" --> In Drupal 8 "configuration entities" are a thing
+
+Notes:
+
+- Configuration entities are awesome
+  - Can be dumped to YAML files on the filesystem for easy git integration
 
 
 ## And a lot more...
 
-- PDFs
-- Websites
-- Documents
-- Citations
-- Entities (People/Places/Organizations)
-- etc...
-
-
-## Sites Using Islandora
-
-#### [York University](https://digital.library.yorku.ca)
-
-#### [Metropolitan New York Library Council (METRO)](http://dcmny.org/)
-
-#### [Florida Gulf Coast Univeristy](http://fgcu.digital.flvc.org/islandora/object/fgcu%3Aroot)
-
-#### [Canadian Writing Research Collaboratory](http://beta.cwrc.ca)
-
-#### [... and many others](http://islandora.ca/islandora-installations)
-
+- Drupal can be a web service back-end
+- Drupal can be a full-stack solution for a website
+- Drupal can serve as an application framework
+- Drupal can integrate with 3rd party applications
+- Drupal distributions allow special-purpose, ready-made Drupal installs
